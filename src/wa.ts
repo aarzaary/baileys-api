@@ -75,7 +75,8 @@ export class Session {
     const { sessionId, socketConfig, proxy } = options;
     this.socket = makeWASocket({
       printQRInTerminal: true,
-      browser: Browsers.ubuntu('Chrome'),
+      // browser: Browsers.ubuntu('Chrome'),
+      browser: ["WA Blast", "Chrome", "111.0.5563.65"],
       generateHighQualityLinkPreview: true,
       ...socketConfig,
       logger,
